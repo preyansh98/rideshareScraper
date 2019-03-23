@@ -48,7 +48,7 @@ function parsetext(text){
 	 	isDate(curr); 
 	 	isTime(curr); 
 
-	 	if(dateFound && timeFound){
+	 	if(dateFound == true && timeFound == true){
 	 		//proceed to next step
 	 		console.log("The date is " + date + " and the time is " + time); 
 	 	}
