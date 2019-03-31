@@ -11,15 +11,15 @@ var index;
 /**
 *	Main Code. 
 */
-//if(searchUber()){
+if(searchUber()){
 	//search was succesful, then find parent element
-//	var text = uberfound.parentElement; 
-//	parsetext(text); 
-//}
+	var text = uberfound[0].parentElement; 
+	parsetext(text); 
+}
 
 //test code
-var text = document.querySelector("p").innerText; 
-parsetext(text); 
+//var text = document.querySelector("p").innerText; 
+//parsetext(text); 
 
 function searchUber(){
 	var searchbutton = document.getElementsByClassName("inputtext")[0]; 
