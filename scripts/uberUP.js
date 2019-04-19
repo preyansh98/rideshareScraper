@@ -5,6 +5,7 @@ var time;
 var dateFound = false; 
 var timeFound = false; 
 var index; 
+var dates; 
 
 //This function will search for the keyword uber once mcgill group page is open. 
 
@@ -64,7 +65,7 @@ function isDate(curr){
 	curr = curr.replace(/[^A-Za-z]/g, ""); 
 	curr = curr.toLowerCase().trim();
 
-	var dates = [[0, "tomorrow"], [0, "weekend"], [0, "tmr"], [0,"tmrw"], [0,"monday"], [0,"tuesday"], [0,"wednesday"], 
+	dates = [[0, "tomorrow"], [0, "weekend"], [0, "tmr"], [0,"tmrw"], [0,"monday"], [0,"tuesday"], [0,"wednesday"], 
 	[0,"thursday"], [0,"friday"]];  //we keep growing this list, and shifting elements based on priority.  
 
 			/**
