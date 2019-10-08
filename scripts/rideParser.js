@@ -6,16 +6,12 @@ var dateFound = false;
 var timeFound = false; 
 var index; 
 
-//This function will search for the keyword uber once mcgill group page is open. 
-
-/**
-*	Main Code. 
-*/
-//if(searchUber()){
-	//search was succesful, then find parent element
-//	var text = uberfound.parentElement; 
-//	parsetext(text); 
-//}
+//Main Code:
+// if(searchUber()){
+// 	//search was succesful, then find parent element
+// 	var text = uberfound.parentElement; 
+// 	parsetext(text); 
+// }
 
 //test code
 var text = document.querySelector("p").innerText; 
@@ -68,8 +64,7 @@ function isDate(curr){
 	[0,"thursday"], [0,"friday"]];  //we keep growing this list, and shifting elements based on priority.  
 
 			/**
-		 * This loop is theoretically O(n), but is close to O(1) for popular searches since 
-	 * returns as soon as its found one. The array dates[] will be reshifted based on popular searches. 
+		 * TODO: Replace the Dates 2D Array with a simple Map. 
 	*/
 		for(var i = 0; i<dates.length; i++) {
 			if(curr.localeCompare(dates[i][1]) === 0) {
