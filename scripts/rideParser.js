@@ -22,12 +22,8 @@ function searchUber(){
 	searchbutton.value = "Uber"; 
 	searchbutton.parentElement.parentElement.parentElement.submit(); 
 	uberfound = document.getElementsByClassName("highlightNode"); 
-	if(uberfound.length > 0){
-		return true; 
-	}
-	else{
-		return false; 
-	}
+
+	return (uberfound.length > 0);
 }
 
 
